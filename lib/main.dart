@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:travel_app/constant/app_colors.dart';
-import 'package:travel_app/widgets/graid_view_list_widget.dart';
+import 'package:travel_app/widgets/grid_view_list_widget.dart';
 import 'package:travel_app/widgets/header_widget.dart';
 import 'package:travel_app/widgets/sub_header_widget.dart';
 import 'package:sizer/sizer.dart';
