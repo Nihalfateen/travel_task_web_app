@@ -29,7 +29,7 @@ class GraidViewListWidget extends StatelessWidget {
               : 1, // Number of columns
           crossAxisSpacing: 15.0, // Horizontal space between grid items
           mainAxisSpacing: 15.0, // Vertical space between grid items
-          childAspectRatio: Device.screenType == ScreenType.tablet ? 1 / 1.18 : 0.95,
+          childAspectRatio: Device.screenType == ScreenType.tablet ? 1 / 1.18 : 0.98,
         ),
         itemCount: listOfImages.length, // Number of items in the grid
         itemBuilder: (context, index) {
@@ -110,10 +110,8 @@ class GraidViewListWidget extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Expanded(
-                  child: Image.asset(Assets.imagesUsers,fit: Device.screenType == ScreenType.tablet
-                               ?BoxFit.fill:BoxFit.fill,filterQuality: FilterQuality.high,),
-                ),
+                Image.asset(Assets.imagesUsers,fit: Device.screenType == ScreenType.tablet
+                             ?BoxFit.fill:BoxFit.fill,filterQuality: FilterQuality.high,),
                const Spacer(),
                 const Text(
                   '4 unfinished tasks',
